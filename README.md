@@ -105,3 +105,4 @@ https://www.hackerrank.com/domains/java
 * Web Basics - Learn the basics of HTML5 & CSS3		https://www.w3schools.com/html/
 * JavaScript - Learn the basics of Javascript		https://www.javatpoint.com/javascript-tutorial![image](https://user-images.githubusercontent.com/42864715/172369342-f5a11d3a-15fe-46da-9253-4ef28c976f30.png)
 
+### Topics for self learning - String Methods, String vs StringBuilder
