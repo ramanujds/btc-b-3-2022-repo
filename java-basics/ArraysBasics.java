@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 class ArraysBasics{
 	public static void main(String []args){
@@ -37,5 +38,29 @@ class ArraysBasics{
 		}
 		System.out.println("\nMin = "+min);
 
+		// Finding the second largest item
+		
+		/*
+		int max1=nums[0], max2=nums[0];
+		
+		for(int item:nums){
+			if(item>max1){
+				max1=item;
+			}
+		}
+
+		for(int item:nums){
+			if(item>max2 && item<max1){
+				max2=item;
+			}
+		}
+		
+		System.out.println("\nSecond Largest = "+max2);
+		*/
+
+		Arrays.sort(nums);
+		// O(nLogn)
+		System.out.println("Second Largest = "+nums[nums.length-2]);
+		
 	}
 }
