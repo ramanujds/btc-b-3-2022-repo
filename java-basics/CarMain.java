@@ -1,9 +1,33 @@
 class Car{
 	
 	// Fields
-	String regs;
-	String model;
-	String color;
+	private String regs;
+	private String model;
+	private String color;
+
+	public void setRegs(String regs){
+		this.regs = regs;
+	}
+
+	public String getRegs(){
+		return regs;
+	}
+
+	public void setModel(String model){
+		this.model = model;
+	}
+
+	public String getModel(){
+		return model;
+	}	
+
+	public void setColor(String color){
+		this.color = color;
+	}
+
+	public String getColor(){
+		return color;
+	}		
 
 	static String type = "Petrol";
 	
@@ -36,9 +60,9 @@ class CarMain{
 	public static void main(String []args){
 		
 		Car ford = new Car();
-		ford.regs = "KA05 8888";
-		ford.model = "Eco Sports";
-		ford.color = "Black";
+		ford.setRegs("KA05 8888");
+		ford.setModel("Eco Sports");
+		ford.setColor("Black");
 
 		ford.start();
 		ford.acclerate();
@@ -48,6 +72,8 @@ class CarMain{
 
 		ford.printCarDetails();
 		System.out.println("\n-------------------------------\n");
+	
+	/*
 
 		Car tata = new Car();
 		tata.regs = "WB02 4444";
@@ -60,6 +86,7 @@ class CarMain{
 
 
 		tata.printCarDetails();
+	*/
 		
 	}
 }
