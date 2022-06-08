@@ -30,3 +30,27 @@ The school conducts a statistical survey to determine the pass percentage and pe
 4. Identify behavior for the classes.
 5. Identify the relationship between the objects (Composition and Aggregation).
 6. Illustrate using class diagrams.
+
+
+#### Tasks  : 
+
+- 1.Model the classes in Java.
+- 2.Model the attributes for each class.
+- 3.Model the behaviour for each class. 
+- 4.Create constructors for each class.
+- 5.In an implementation class create objects for the classes.
+- 6.Initialize constructors with parameters to set values for the attributes of the classes.
+
+#### Tasks  :
+
+-7.Create objects and call the methods of the class in the implementation session
+-8.Display the following.
+    - Total marks of each student in grade 9.
+    - The grades of each student in grade 9.
+    - The name of the students who have cleared the exam.
+    - The names of students who need to reappear for the exam.
+    - Student details in sorted order of total marks.(in ascending order -  use any one of the sorting algorithms).
+    - The top scorer of grade 9(use linear or binary search).
+
+
+
