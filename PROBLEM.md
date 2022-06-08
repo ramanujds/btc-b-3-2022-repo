@@ -109,5 +109,69 @@ The pH value of an aquarium may change from time to time.**
 
     Total number of palindromes: 2
 
+## Practice Statement: Bookstore
+
+**The Hammond Bookstore sells books of different genres, such as fiction, religion, adventure, cooking, travel, autobiographies, etc., written by different authors.The bookstore has had a good sale this past year. Now, the end of the year sale is on, and the books from the fiction genre are being sold at a discount of 25%.**
+
+**Tasks :**
+
+1. Implement appropriate access specifiers.
+2. Write accessor and mutator methods for all the classes.
+3. Access the variables of the classes only through accessor and mutator methods.
+
+```java
+class Book {
+    // Implement data hiding by declaring member variables private
+    int isbnNo;
+    String bookName;
+    String author;
+    String genre;
+    float price;
+}
+
+
+
+public class Bookstore {
+    // Implement data hiding by declaring member variables private
+    String bookStoreName;
+    String bookStoreId;
+    Book[] books;
+
+    public Bookstore(String bookStoreName, String bookStoreId, Book[] books) {
+        this.bookStoreName = bookStoreName;
+        this.bookStoreId = bookStoreId;
+        this.books = books;
+    }
+
+    //Declare getter and setter methods
+
+
+    // Function to calculate the discount for a genre of books
+    public float calculateDiscount(Book book,float discountPercentage)
+    {
+        return -1;
+    }
+}
+
+
+public class BookStoreImpl {
+    public static void main(String[] args) {
+    
+        // Declare and initialize author, book and bookstore objects
+
+        // Use the get and set methods to set values to the variables
+
+        //Display book details before discount is calculated
+
+        //Calculate discount on the books by calling the methods
+
+        //Display book details after discount is calculated
+    }
+
+}
+
+
+
+```
 
 
