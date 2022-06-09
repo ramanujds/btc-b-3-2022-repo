@@ -1,13 +1,13 @@
 package com.xyz.oopconcepts;
 
-public class Item {
+public abstract class Item {
 
 	private int id;
 	private String itemName;
 	private float price;
 
 	public Item() {
-
+		System.out.println("Default Constructor Invoked");
 	}
 
 	public Item(int id, String itemName, float price) {
@@ -40,11 +40,7 @@ public class Item {
 		this.price = price;
 	}
 
-	public void showItemDetails() {
-		System.out.println("ID : " + id);
-		System.out.println("Name : " + itemName);
-		System.out.println("Price : " + price);
-	}
+	//public abstract void showItemDetails();
 
 	
 	public String toString() {
