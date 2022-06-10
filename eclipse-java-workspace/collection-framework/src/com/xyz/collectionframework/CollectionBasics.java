@@ -12,7 +12,7 @@ public class CollectionBasics {
 
 	public static void main(String[] args) {
 		
-		Stack<String> items = new Stack<>();
+		List<String> items = new Stack<>();
 		
 		items.add("Rohan");
 		items.add("Suraj");
@@ -20,14 +20,16 @@ public class CollectionBasics {
 		items.add("Yash");
 
 		
-		while(!items.isEmpty()) {
-			System.out.println(items.pop());
-		}
+//		while(!items.isEmpty()) {
+//			System.out.println(items.pop());
+//		}
+		
+		
 	
 		
-//		for(String item:items) {
-//			System.out.println(item.toUpperCase());
-//		}
+		for(String item:items) {
+			System.out.println(item.toUpperCase());
+		}
 		
 
 	}
