@@ -106,3 +106,160 @@ https://www.hackerrank.com/domains/java
 * JavaScript - Learn the basics of Javascript		https://www.javatpoint.com/javascript-tutorial![image](https://user-images.githubusercontent.com/42864715/172369342-f5a11d3a-15fe-46da-9253-4ef28c976f30.png)
 
 ### Topics for self learning - String Methods, String vs StringBuilder
+
+```text
+
+
+Inheritance
+--------------
+
+Item - name, price, id
+Phone - ram, storage
+Laptop - ram, storage, os
+
+				Vehicle		- super class [name,regno]
+			  /		\	\
+			 /		 \	 \
+			/		  \	  \
+		Bus			 Car Bike	 - sub class
+	[capacity]	 /\
+					/  \
+			Electric Petrol
+
+
+bus - horn()
+car - musicSystem, play()
+bike - boolean abs, accletate()
+
+
+Car car = new Vehicle();
+
+
+class Item{		
+	....
+	....
+}
+
+class Laptop extends Item{
+	
+}
+
+ ** private and static properties wont be inherited
+
+
+Abstraction:
+--------------
+Item -
+	id, name, price
+	abstract void showItemDetails();
+	setPrice()
+
+ElectronicItem extends Item -
+	showItemDetails()
+	...
+
+Clothing extends Item -
+	showItemDetails()
+	...
+
+
+Abstract Class - 
+	contains abstract methods
+	cannot create object of any abstract class
+	extending the abstract class and overriding the abstrat methods are necessary
+
+
+
+
+
+Multiple Inheritance :
+------------------------
+
+		A		B
+		\		/
+		 \	  /
+			C
+
+A{
+fun(){
+	...
+ }
+}
+
+B{
+fun(){
+	...
+ }
+}
+
+class C extends A,B{
+
+}
+
+Interfaces -
+------------------
+an interface looks like a class but it can have only abstract methods and final fields
+
+
+
+When to choose abstract class over interface and vice versa?
+-------------------------------------------------------------
+
+Item - price, name
+
+WrittenItem extends Item - author
+Book extends WrittenItem - isbn, pages
+Journal extends WrittenItem - publishedDate
+
+MediaItem extends Item
+....
+
+Interfaces are used for runtime ploymorphism and to acheive loose coupling
+
+
+Method Overloading
+----------------------
+ method with same name but different signatures within the same class
+	- no of arguments, type of arguments
+
+class Calculator{
+	int add(int a, int b){
+		return a+b;
+	}
+	
+	int add(int a, int b, int c){
+		return a+b+c;
+	}
+
+	float add(float a, float b){
+		return a+b;
+	}
+
+}
+
+main(){
+	Calculator calc = new Calculator();
+	calc.add(4,5);
+	calc.add(4.5f,3.4F);
+	calc.add(3,8,6);
+}
+
+
+ notes.txt
+
+ lotus.jpg
+
+ profile.pdf
+
+
+Overloading vs Overriding
+---------------------------
+
+
+Object class methods :
+-------------------------
+String toString()
+boolean equals()
+int hashCode()
+
+```
