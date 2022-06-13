@@ -26,4 +26,8 @@ public class CountChars {
 		return null;
 	}
 	
+	public static void main(String[] args) {
+		
+	}
+	
 }
