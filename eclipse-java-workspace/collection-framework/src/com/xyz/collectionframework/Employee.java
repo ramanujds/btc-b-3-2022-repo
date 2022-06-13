@@ -1,6 +1,6 @@
 package com.xyz.collectionframework;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 
 	int employeeId;
 	String employeeName;
@@ -87,6 +87,12 @@ public class Employee {
 	}
 	
 	
+	@Override
+	public int compareTo(Employee emp) {
+		// return (int)(this.salary-emp.salary);
+		
+		return this.employeeName.compareTo(emp.employeeName);
+	}
 	
 	
 }
