@@ -42,10 +42,18 @@ public class SetBasics {
 		employees.add(e4);
 		employees.add(e5);
 		
+		// 	Searching for an Employee with an id
+		Employee employee=null;
+		int id = 1005;
+		
 		for(Employee emp:employees) {
-			System.out.println(emp);
+			if(emp.getEmployeeId()==id) {
+				employee=emp;
+				break;
+			}
 		}
 		
+		System.out.println("Employee : "+employee);
 		
 	}
 	
