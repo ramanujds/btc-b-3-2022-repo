@@ -21,20 +21,18 @@ public class EmployeeServiceImpl implements IEmployeeService{
 
 	@Override
 	public Employee findEmployee(int employeeId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return dao.findEmployee(employeeId);
 	}
 
 	@Override
 	public List<Employee> getAllEmployees() {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.getAllEmployees();
 	}
 
 	@Override
 	public boolean deleteEmployeeById(int employeeId) {
-		// TODO Auto-generated method stub
-		return false;
+		return dao.deleteEmployeeById(employeeId);
 	}
 
 	
