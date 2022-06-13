@@ -365,4 +365,15 @@ public class Address {
 
 ```
 
+```text
 
+Instructions:
+You are given an array of 21 email ids.
+INPUT :
+// Here is the array containing all email ids.
+var emailIds = [ "albert.eisntein@gmail.com",
+"jagadish_chandra_bose@yahoo.com",
+"srinivasa.ramanujan@gmail.com", "bjarne_stroustrup@yahoo.com", "max.planck@gmail.com", "nikola.tesla@hotmail.com", "galileo_galilei@hotmail.com", "a.p.j.abdul.kalam@gmail.com", "richard.stallman@inbox.com", "john_von_neumann@mail.com", "c_v_raman@yahoo.com", "isaac.newton@yandex.com", "s_chandrashekar@hotmail.com", "james_gosling@shortmail.com", "ken.thompson@gmail.com", "stephen_hawking@rediffmail.com", "marie_curie@yahoo.com", "michael.faraday@hotmail.com", "charles.babbage@hotmail.com" ];
+Programmatically parse the given array and create a HashMap with key as the domain name and value as the List<String> containing all email ids for that domain.
+
+```
