@@ -262,4 +262,34 @@ String toString()
 boolean equals()
 int hashCode()
 
+
+Collection Framework
+-------------------------
+Limitations of Arrays -
+
+* Fixed size
+* Items can not be removed
+* Accessing through index only
+* no well define algorithms are present
+
+Collection Framework
+--------------------
+API - Application Programming Interface
+Consists of different interfaces and classes
+
+
+Layered Architecture
+----------------------
+
+Presentation Layer - For interactiong with clients
+
+Business Layer - Business Logic and service classes
+
+Persistence Layer - DAO (Data Access Object) contains storage logic
+
+Database - Conatins the database
+
+
+
+
 ```
