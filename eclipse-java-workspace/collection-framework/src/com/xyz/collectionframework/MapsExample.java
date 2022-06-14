@@ -2,6 +2,7 @@ package com.xyz.collectionframework;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.BiConsumer;
 
 public class MapsExample {
 
@@ -52,9 +53,11 @@ public class MapsExample {
 		
 		// printing all the employees
 		
-		for(int id:employees.keySet()) {
-			System.out.println(employees.get(id));
-		}
+//		for(int id:employees.keySet()) {
+//			System.out.println(employees.get(id));
+//		}
+		
+		employees.forEach((k,v)->System.out.println(v.getEmployeeId()));
 		
 	}
 	

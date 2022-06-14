@@ -48,7 +48,7 @@ public class CollectionSorting {
 		
 		Comparator<Employee> compareById = (emp1,emp2) -> emp1.getEmployeeId() - emp2.getEmployeeId();
 
-		Collections.sort(employeeList, compareById);
+		Collections.sort(employeeList, (em1,em2)->em1.getEmployeeName().compareTo(em2.getEmployeeName()));
 
 		for (Employee emp : employeeList) {
 			System.out.println(emp);

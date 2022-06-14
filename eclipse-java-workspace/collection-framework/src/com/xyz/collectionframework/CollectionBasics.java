@@ -36,9 +36,11 @@ public class CollectionBasics {
 		Collections.sort(items, new CompareReverse());
 	
 		
-		for(String item:items) {
-			System.out.println(item.toUpperCase());
-		}
+//		for(String item:items) {
+//			System.out.println(item.toUpperCase());
+//		}
+		
+		items.forEach(item->System.out.println(item));
 		
 		//List<Employee> employees = new ArrayList<Employee>();
 		
