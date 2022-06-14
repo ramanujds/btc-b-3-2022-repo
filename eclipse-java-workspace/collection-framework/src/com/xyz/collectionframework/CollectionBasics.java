@@ -42,6 +42,8 @@ public class CollectionBasics {
 		
 		items.forEach(item->System.out.println(item));
 		
+		items.forEach(System.out::println);
+		
 		//List<Employee> employees = new ArrayList<Employee>();
 		
 		

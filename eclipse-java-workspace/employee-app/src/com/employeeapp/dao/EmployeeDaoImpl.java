@@ -34,6 +34,10 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+	String findEmployeeByName(String name) {
+		return null;
+	}
 
 	
 	
