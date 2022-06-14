@@ -92,6 +92,10 @@ public class Resident {
 
 }
 
+```
+**Service Layer
+
+```java
 
 public class ResidentService {
 
