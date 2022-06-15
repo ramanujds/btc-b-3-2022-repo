@@ -377,3 +377,74 @@ var emailIds = [ "albert.eisntein@gmail.com",
 Programmatically parse the given array and create a HashMap with key as the domain name and value as the List<String> containing all email ids for that domain.
 
 ```
+
+## Practice Statement :A Mobile Phone List​
+
+***Imagine that you wish to purchase a mobile phone with specifications that include the brand name, cost, screen size, battery life, storage space and camera pixels. You have a list of the latest models available. Create a program that performs the following activities given in the list:​**
+
+    1. Find phones of a particular brand.
+    2. Find the phones whose cost is $500 and above.
+    3. Enlist the phones which have camera specification as 12 MP and more
+
+
+### Boilerplates
+
+```java
+
+public class Mobile {
+
+    private String brandName;
+    private String modelName;
+    private double cost;
+    private String screenSize;
+    private String batteryLife;
+    private String storageSpace;
+    private int cameraPixels;
+
+    //getter and setter
+
+    //constructor
+
+    //toString method
+
+
+}
+```
+
+```java
+
+public class MobileStore {
+
+
+
+    public MobileStore()
+    {
+
+    }
+   
+    //Find phones of a particular brand.
+    public List<Mobile> findPhoneByBrand(String brandName)
+    {
+
+        return null;
+    }
+
+    //Find the phones whose cost is $500 and above.
+    public List<Mobile> findPhoneCostMoreThan500$()
+    {
+
+      return null;
+    }
+
+    //Enlist the phones which have camera specification as 12 MP and more
+    public List<Mobile> findPhonePixelMoreThan12MP()
+    {
+
+        return null;
+    }
+
+
+}
+
+
+```
