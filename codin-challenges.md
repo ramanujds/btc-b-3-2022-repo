@@ -108,14 +108,14 @@ public class ResidentService {
     /**
      * create list of all the residents.
      */
-    public boolean addResident(Resident resident) {
+    public boolean addResident(Resident resident) throws DuplicateResidentException {
 
         return false;
     }
 
    //Search for people with their social security number.
 
-    public Resident searchResident(int socialSecurityNumber){
+    public Resident searchResident(int socialSecurityNumber) throws ResidentNotFoundException{
 
        return null;
 
