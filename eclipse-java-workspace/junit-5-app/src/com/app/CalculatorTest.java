@@ -7,13 +7,20 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledOnJre;
+import org.junit.jupiter.api.condition.DisabledOnOs;
+import org.junit.jupiter.api.condition.JRE;
+import org.junit.jupiter.api.condition.OS;
 
 public class CalculatorTest {
 
 	Calculator calc;
 	
 	@Test
+	@DisabledOnJre(value = JRE.JAVA_15)
+	@DisabledOnOs(value = OS.WINDOWS)
 	public void testAdd() {
 		assertEquals(50, calc.add(20, 30));
 	}

@@ -13,14 +13,12 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 
 	@Override
 	public Employee saveEmployee(Employee employee) {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDb.put(employee.getEmployeeId(), employee);
 	}
 
 	@Override
 	public Employee findEmployee(int employeeId) {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDb.get(employeeId);
 	}
 
 	@Override
