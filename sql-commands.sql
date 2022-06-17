@@ -27,6 +27,31 @@ select * from student where scores>90;
 
 select roll, scores from student where scores>90;
 
+select * from student where scores>=80 AND scores<=90;
+
+select * from student where scores BETWEEN 80 AND 90;
+
+select * from student where roll=102 OR roll=103; 
+
+select * from student where roll IN(102,103);
+
+
+
+select * from emp order by sal desc;
+SELECT * FROM EMP ORDER BY DEPTNO ASC,JOB DESC;
+
+select ename, hiredate, extract(year from curdate())-extract(year from hiredate) as 'experience'  from em
+p;
+
+
+select empno, ename,sal, sal/30 as 'daily-salary' from emp order by sal;
+
+select * from emp where extract(year from hiredate)<1981;
+
+
+
+select * from emp where mgr in( select distinct mgr from emp where mgr is not null);
+
 
 
 
