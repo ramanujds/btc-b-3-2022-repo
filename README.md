@@ -337,3 +337,17 @@ SQL
 
 
 ```
+
+### Tips
+
+``` text
+empno - numeric(4)
+ename - varchar(30)
+job - varchar(30)
+hiredate - date
+mgr - numeric(4)
+sal - numeric(6,2)
+comm - numeric (6,2)
+deptno - numeric(2)
+
+```
