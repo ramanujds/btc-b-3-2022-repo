@@ -293,3 +293,47 @@ Database - Conatins the database
 
 
 ```
+
+## Database Notes
+
+```text
+
+
+DBMS - Database Management System
+
+Relational
+------------
+MySQL, SQLServer, Oracle, Postgres
+
+
+Non-Relational (NoSQL)
+-----------------------
+MongoDB, Amazon DynamoDB
+
+SQL - Structured Query Language
+-------------------------------
+
+Employee, Student, Laptop - Entities
+
+Tables - Rows/Records/Tuple	| Columns/Fields/Attributes
+
+-----------------
+SQL
+------
+	DDL - Data Defn. Language
+		- create, alter, drop, truncate
+
+	DML - Data Manipulation Language
+		-	insert, update, delete
+
+	DQL - Data Query Language
+		- select
+
+	DCL - Data Control Language
+		- grant, revoke
+
+	TCL - Transaction Control Language
+		- COMMIT, ROLLBACK, SAVEPOINT
+
+
+```
