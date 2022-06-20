@@ -448,3 +448,16 @@ public class MobileStore {
 
 
 ```
+
+**SQL Exercise**
+
+```sql
+-- Find the total employees belonging to each dept where two or more employees are working --
+
+-- Find the dept, average salary, max salary, min salary where min salary>40000 --
+
+-- Display the details of the employees who are working in IT Dept. --
+
+-- Count the employees working under each manager --
+
+```
