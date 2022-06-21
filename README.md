@@ -368,7 +368,7 @@ deptno - numeric(2)
 
 ```
 
-## HTML topis to go through - 
+## HTML topics to go through - 
 * HTML Lists
 * HTML Tables
 * HTML Form Elements
