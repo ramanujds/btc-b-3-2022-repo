@@ -367,3 +367,10 @@ comm - numeric (6,2)
 deptno - numeric(2)
 
 ```
+
+## HTML topis to go through - 
+* HTML Lists
+* HTML Tables
+* HTML Form Elements
+* Links
+* Divs
