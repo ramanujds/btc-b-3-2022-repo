@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let count = prompt("Input total count : ");
+
+        for(let i=0; i<count; i++){
+            document.write("<h2>Hello World</h2>")
+        }
+
+
+        function sayHello(){
+           if(confirm("You want to continue?")){
+            alert("Hey there..Welecome to Coding World..");
+           }
+           else{
+            alert("Bye..")
+           }
+        }
+
+
+    </script>
+    <script src="my-script.js"></script>
+
+</head>
+<body>
+   <h2>Hello Everyone..</h2>
+    <button onclick="sayHello()">Click me</button>
+</body>
+</html>

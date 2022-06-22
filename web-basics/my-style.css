@@ -1,0 +1,32 @@
+/* Element Selector */
+
+h1,p{
+    color: blue;
+}
+
+th{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+/* ID Selector */
+
+#p1{
+    text-align: center;
+}
+
+/* Class Selector */
+
+.from-inputs{
+    font-style: italic;
+}
+
+#p1:hover{
+    color: red;
+}
+
+#p-emp{
+    border: 3px solid black;
+    padding: 20px;
+    margin: 20px;
+}

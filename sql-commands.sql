@@ -128,5 +128,36 @@ select e1.empno, e1.ename from emp e1 join emp e2 on e1.empno=e2.mgr;
 select d.deptno, d.deptname, count(e.empno) as 'Total Employees' from emp e right join dept d using(deptno) group by d.deptno, d.deptname;
 
 
+
+
 -- co-related subquery --
 select d.*, (select count(empno) from emp e where e.deptno=d.deptno) as 'Total Employees' from dept d;
+
+-- least 5 earners --
+
+select * from emp order by sal limit 5;
+
+alter table emp add constraint fk_deptno foreign key(deptno) references dept(deptno);
+
+alter table dept add primary key(deptno);
+
+delete from emp where empno=8888;
+
+-- List the emps those who joined in company before 15th of the month.--
+
+select * from emp where extract(day from hiredate)<=15;
+
+-- List the name of dept where highest no of emps are working --
+
+
+select d.*, (select count(empno) from emp e where e.deptno=d.deptno) as 'Total Employees' from dept d order by 4 desc limit 1;
+
+select * from dept where deptno = (select deptno from emp group by deptno order by count(*) desc limit 1);
+
+-- Manager with the lowest salary --
+
+
+-- Employees working under KING --
+
+
+-- Manager with lest employees --
