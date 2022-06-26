@@ -1,4 +1,4 @@
-package com.employeewebapp.controller;
+package com.employeeapp.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,6 +17,7 @@ public class AppController extends HttpServlet {
 
 	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
+		System.out.println("From AppController Class..");
 		String name = "Mr./Ms. "+request.getParameter("tname");
 		
 		// request.setAttribute("username", name);
