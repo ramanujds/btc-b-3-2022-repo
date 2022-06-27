@@ -487,5 +487,5 @@ Implement the following operations:
 * Filter items category wise
 * Create exceptions ItemNotFoundException and InvalidCategoryException that should be thrown if you input invalid data
 
-**Maintain Java Coding Standard.**
-**Use layered architecture**
+* **Maintain Java Coding Standard.**
+* **Use layered architecture**
