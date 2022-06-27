@@ -468,13 +468,14 @@ public class MobileStore {
 
 **Develop a Food Ordering App (JPA/MySQL). Refer to the class diagram below to develop required classes.**
 
-
-__MenuItem__
+```text
+MenuItem
 	- menuItemId:long
 	- itemName:String
 	- status: String(available/not-available)
 	- price:double
 	- category: String (Veg/Nonveg)
+```
 
 Implement the following operations:
 
