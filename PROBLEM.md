@@ -461,3 +461,30 @@ public class MobileStore {
 -- Count the employees working under each manager --
 
 ```
+
+## Servlet-JSP-MySQL Practice Problem
+
+**Food Ordering App**
+
+**Develop a Food Ordering App (JPA/MySQL). Refer to the class diagram below to develop required classes.**
+
+
+__MenuItem__
+	- menuItemId:long
+	- itemName:String
+	- status: String(available/not-available)
+	- price:double
+	- category: String (Veg/Nonveg)
+
+Implement the following operations:
+
+* Add a new item to the menu
+* Delete an item from the menu
+* Update the price of an item
+* Search an Item by Name
+* Display all the available items
+* Filter items category wise
+* Create exceptions ItemNotFoundException and InvalidCategoryException that should be thrown if you input invalid data
+
+**Maintain Java Coding Standard.**
+**Use layered architecture**
