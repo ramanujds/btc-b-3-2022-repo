@@ -1,7 +1,12 @@
 package com.employeeapp.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Employee implements Comparable<Employee> {
 
+	@Id
 	private int employeeId;
 	private String employeeName;
 	private float salary;
