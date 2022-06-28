@@ -10,6 +10,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import com.xyz.employeeapp.model.Employee;
+import com.xyz.employeeapp.model.Laptop;
 
 /**
  * Hello world!
@@ -32,14 +33,14 @@ public class App
 //    	Employee emp2 = new Employee(5003,"Manish Sharma", LocalDate.of(2020, 12, 15), 36000);
 //    	Employee emp3 = new Employee(5004,"Supriya Roy", LocalDate.of(2021, 10, 25), 36000);
 //    	Employee emp4 = new Employee(5005,"Gaurav Dutta", LocalDate.of(2020, 04, 10), 36000);
-//    	
+////    	
 //    	trnx.begin();
 //    	emgr.persist(emp1);
 //    	emgr.persist(emp2);
 //    	emgr.persist(emp3);
 //    	emgr.persist(emp4);
 //    	trnx.commit();
-    	
+//    	
     	// Fetch Employee
     	
 //    	Employee emp = emgr.find(Employee.class, 5003);
@@ -80,6 +81,34 @@ public class App
 //    	Employee emp = (Employee) searchByName.getSingleResult();
 //    	
 //    	System.out.println(emp);
+    	
+//    	Query query = emgr.createNativeQuery("select * from employee_db", Employee.class);
+//    	List<Employee> employeeList = query.getResultList();
+//    	employeeList.forEach(e->System.out.println(e));
+    	
+//    	Query query = emgr.createNamedQuery("findByName");
+//    	query.setParameter("employeeName","Gaurav Dutta" );
+//    	
+//    	Employee emp = (Employee)query.getSingleResult();
+//    	
+//    	System.out.println(emp);
+    	
+//    	Employee emp = emgr.find(Employee.class, 5003);
+//   
+////    	
+//    	Laptop laptop1 = new Laptop("mac12345","Apple",1024);
+//    	Laptop laptop2 = new Laptop("hp5431","HP",1024);
+//    	
+//    	trnx.begin();
+//    	emgr.persist(laptop1);
+//    	emgr.persist(laptop2);
+//    	emp.getLaptop().add(laptop1);
+//    	emp.getLaptop().add(laptop2);
+//    	trnx.commit();
+    	
+    	
+    	Employee emp = emgr.find(Employee.class, 5003);
+    	System.out.println(emp.getEmployeeName());
    
     	
     }

@@ -8,6 +8,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 
 import com.employeeapp.model.Employee;
 
@@ -40,7 +41,7 @@ public class EmployeeDaoJpa implements IEmployeeDao {
 
 	@Override
 	public List<Employee> getAllEmployees() throws SQLException {
-    	Query query1 = emgr.createQuery("from Employee");
+    	TypedQuery<Employee> query1 = emgr.createQuery("from Employee",Employee.class);
     	List<Employee> employeeList = query1.getResultList();
     	 return employeeList;
 	}
