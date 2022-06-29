@@ -12,11 +12,21 @@ public class App
         
     	ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
     	
-    	Laptop myLaptop = context.getBean(Laptop.class);
-    	
-        myLaptop.connectInternet();
-        myLaptop.joinZoomMeeting();
-        myLaptop.showLaptopInfo();
+//    	Laptop myLaptop = context.getBean(Laptop.class);
+//    	
+//        myLaptop.connectInternet();
+//        myLaptop.joinZoomMeeting();
+//        myLaptop.setRam(16);
+//        
+//        myLaptop.showLaptopInfo();
+//        
+//        Laptop myLaptop2 = context.getBean(Laptop.class);
+//        
+//        myLaptop2.showLaptopInfo();
+//        
+//        Laptop myLaptop3 = context.getBean(Laptop.class);
+//        
+//        myLaptop3.showLaptopInfo();
         
         
 //        Scanner scan = context.getBean(Scanner.class);

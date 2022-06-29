@@ -6,8 +6,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
 import com.employeeapp.model.Employee;
 
+@Component("dao-collection")
 public class EmployeeDaoImpl implements IEmployeeDao {
 	
 	static Map<Integer, Employee> employeeDb = new HashMap<Integer, Employee>();

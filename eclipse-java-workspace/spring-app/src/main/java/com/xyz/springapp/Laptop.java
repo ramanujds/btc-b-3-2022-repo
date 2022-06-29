@@ -1,11 +1,14 @@
 package com.xyz.springapp;
 
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Laptop {
+//@Scope(value = "prototype")
+public class Laptop implements InitializingBean {
 
 	@Autowired
 	InternetConnection connection;
@@ -19,7 +22,14 @@ public class Laptop {
 	@Value("${laptop.ram}")
 	private int ram; 
 	
+	public Laptop() {
+		
+	}
 	
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println(this);
+	}
 	
 	
 //	public InternetConnection getConnection() {

@@ -10,8 +10,12 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
 import com.employeeapp.model.Employee;
 
+@Repository("dao-jpa")
 public class EmployeeDaoJpa implements IEmployeeDao {
 	
 	EntityManagerFactory factory;

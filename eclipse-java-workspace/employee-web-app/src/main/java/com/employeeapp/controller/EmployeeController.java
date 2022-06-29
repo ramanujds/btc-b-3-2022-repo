@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.employeeapp.configuration.AppConfig;
 import com.employeeapp.model.Employee;
 import com.employeeapp.service.EmployeeServiceImpl;
 import com.employeeapp.service.IEmployeeService;
@@ -21,10 +25,13 @@ import com.employeeapp.service.IEmployeeService;
 @WebServlet("/employee")
 public class EmployeeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
 	private IEmployeeService service;
 
 	public void init(ServletConfig config) throws ServletException {
-		service=new EmployeeServiceImpl();
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		
+		service=context.getBean(IEmployeeService.class);
 	}
 
 
