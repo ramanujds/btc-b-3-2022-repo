@@ -16,13 +16,15 @@ public class App
     	
         myLaptop.connectInternet();
         myLaptop.joinZoomMeeting();
+        myLaptop.showLaptopInfo();
         
-        Scanner scan = context.getBean(Scanner.class);
         
-        System.out.println("Enter a value:");
-        String value = scan.nextLine();
-        System.out.println(value);
+//        Scanner scan = context.getBean(Scanner.class);
         
+//        System.out.println("Enter a value:");
+//        String value = scan.nextLine();
+//        System.out.println(value);
+//        
 
     }
 }
