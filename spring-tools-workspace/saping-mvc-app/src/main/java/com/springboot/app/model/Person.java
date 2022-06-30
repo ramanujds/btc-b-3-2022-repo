@@ -1,4 +1,4 @@
-package com.springboot.app.controller;
+package com.springboot.app.model;
 
 public class Person {
 
