@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.springboot.app.model.Person;
 import com.springboot.app.repository.IPersonRepo;
@@ -34,19 +36,28 @@ public class AppController {
 	@PostMapping("/add-person")
 	public String addPerson(@ModelAttribute("person") Person person) {
 		service.addPerson(person);
-		return "show.jsp";
+		return "show";
 	}
 	
 	@GetMapping("/")
 	public String getHomePage() {
-		return "index.jsp";
+		return "index";
 	}
 	
+//	@GetMapping("/search-person")
+//	public ModelAndView getPersonDetails(@RequestParam("pname") String personName) {
+//		Person person = service.searchPerson(personName);
+//		ModelAndView mv = new ModelAndView();
+//		mv.addObject("person", person);
+//		mv.setViewName("show");
+//		return mv;
+//	}
+	
 	@GetMapping("/search-person")
-	public String getPersonDetails(@RequestParam("pname") String personName, Model m) {
+	@ResponseBody
+	public Person getPersonDetails(@RequestParam("pname") String personName) {
 		Person person = service.searchPerson(personName);
-		m.addAttribute("person", person);
-		return "show.jsp";
+		return person;
 	}
 	
 }
