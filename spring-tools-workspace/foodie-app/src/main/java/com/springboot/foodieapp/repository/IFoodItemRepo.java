@@ -1,19 +1,22 @@
 package com.springboot.foodieapp.repository;
 
+
 import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
 import com.springboot.foodieapp.model.FoodItem;
+import com.springboot.foodieapp.model.ItemCategory;
 
-public interface IFoodItemRepo {
+public interface IFoodItemRepo extends JpaRepository<FoodItem, Long>{
 
-	public FoodItem saveFoodItem(FoodItem item);
+	public FoodItem findByItemName(String itemName);
 	
-	public FoodItem findFoodItem(long itemCode);
 	
-	public FoodItem updateFoodItem(FoodItem item);
+	public List<FoodItem> findByCategory(ItemCategory category);
 	
-	public boolean deleteFoodItem(long itemCode);
-	
-	public List<FoodItem> getAllItems();
+	@Query(value = "from FoodItem where price <= :price")
+	public List<FoodItem> findItemInPriceRange(float price);
 	
 }

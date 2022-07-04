@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springboot.foodieapp.model.FoodItem;
+import com.springboot.foodieapp.model.ItemCategory;
 import com.springboot.foodieapp.service.FoodItemService;
 
 @RestController
@@ -46,4 +47,18 @@ public class FoodItemController {
 		return service.getAllItems();
 	}
 	
+	@GetMapping("/items/item-name/{item-name}")
+	public FoodItem findFoodItemByName(@PathVariable("item-name") String itemName) {
+		return service.getItemByItemName(itemName);
+	}
+	
+	@GetMapping("/items/category/{category}")
+	public List<FoodItem> findFoodItemsByCategory(@PathVariable ItemCategory category){
+		return service.findItemsByCategory(category);
+	}
+	
+	@GetMapping("/items/price/{price}")
+	public List<FoodItem> findItemInPriceRange(@PathVariable float price){
+		return service.findItemWithinPrice(price);
+	}
 }
