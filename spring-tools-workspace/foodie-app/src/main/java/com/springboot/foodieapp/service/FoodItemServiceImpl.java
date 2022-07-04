@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.springboot.foodieapp.exception.ItemNotFoundException;
 import com.springboot.foodieapp.model.FoodItem;
 import com.springboot.foodieapp.model.ItemCategory;
 import com.springboot.foodieapp.repository.IFoodItemRepo;
@@ -24,6 +25,9 @@ public class FoodItemServiceImpl implements FoodItemService{
 
 	@Override
 	public FoodItem findFoodItem(long itemCode) {
+		if(!repo.existsById(itemCode)) {
+			throw new ItemNotFoundException("Item with code - "+itemCode+" Not Found!!");
+		}
 		return repo.findById(itemCode).get();
 	}
 
