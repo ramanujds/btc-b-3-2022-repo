@@ -374,3 +374,8 @@ deptno - numeric(2)
 * HTML Form Elements
 * Links
 * Divs
+
+
+## Angular Recordings
+
+https://drive.google.com/drive/folders/1HebnyjDMsC-7-h2J3F5s-BxwDGwJ5fYZ?usp=sharing
